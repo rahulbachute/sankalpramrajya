@@ -977,7 +977,7 @@ footer span { color: var(--gold); }
 ═══════════════════════════════════════ -->
 <nav class="nav" id="mainNav">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-icon">🕉️</div>
+    <div class="nav-logo-icon"></div>
     <div class="nav-logo-text">
       संकल्प रामराज्य सेवा ट्रस्ट
       <span class="nav-logo-sub">Sankalp Ramrajya Seva Trust</span>
@@ -1478,7 +1478,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 // ── Aadhaar formatter ──
 function formatAadhaar(input) {
   let v = input.value.replace(/\D/g,'').slice(0,12);
-  input.value = v.replace(/(\d{4})(\d{0,4})(\d{0,4})/, (_,a,b,c) => [a,b,c].filter(Boolean).join('  '));
+  input.value = v.replace(/(\d{4})(\d{0,4})(\d{0,4})/, (_,a,b,c) => [a,b,c].filter(Boolean).join(' '));
 }
 
 // ── File upload ──
